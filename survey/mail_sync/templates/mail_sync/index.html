@@ -18,9 +18,9 @@
                     <div class="form">
                         <form action="{% url 'success' %}" method="POST">
                             {% csrf_token %}
-                            <input name="login" type="email" id="email" placeholder="Введите свой e-mail">
-                            <input name="ya_app_pass" type="password" id="ya_app_pass" placeholder="Пароль для приложений (Яндекс)">
-                            <input name="tmail_pass" type="password" id="tmail_pass" placeholder="Пароль от нашего почтового сервера (tmail)">
+                            <input name="login" type="email" id="email" placeholder="Введите свой e-mail" required>
+                            <input name="ya_app_pass" type="password" id="ya_app_pass" placeholder="Пароль для приложений (Яндекс)" required>
+                            <input name="tmail_pass" type="password" id="tmail_pass" placeholder="Пароль от нашего почтового сервера (tmail)" required>
                             <button type="submit">Сохранить</button>
                         </form>
                     </div>

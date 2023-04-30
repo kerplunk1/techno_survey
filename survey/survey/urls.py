@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mail_sync.views import index, send_data
+from mail_sync.views import index, send_data, pageNotFound
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
+    path('', index, name='home'),
     path('success/', send_data, name='success')
 ]
+
+handler404 = pageNotFound
