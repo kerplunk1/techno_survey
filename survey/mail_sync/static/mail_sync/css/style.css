@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    background-image: linear-gradient(135deg, #3f87a6, #ebf8e1, #dfa465);
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main {
+    margin: auto;
+    margin-top: 200px;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(159, 199, 235);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.fill_form {
+    width: 450px;
+}
+
+h1 {
+    margin-top: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+input {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 400px;
+    height: 55px;
+    text-align: left;
+    font-size: 18px;
+    border: 3px solid #ccc;
+    border-radius: 7px;
+}
+
+input:focus {
+    border: 3px solid #555;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 350px;
+    height: 55px;
+    background-color: rgb(239, 218, 98);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: goldenrod;
+}
+
+.image_form {
+    width: 450px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    text-align: center;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.main_success {
+    margin: auto;
+    margin-top: 200px;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(159, 199, 235);
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+.success_img_block {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+
+p {
+    text-align: center;
+    font-size: 26px;
+    background-color: rgb(239, 218, 98);
+    text-transform: uppercase;
+    margin-top: 45px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: bold;
+}
