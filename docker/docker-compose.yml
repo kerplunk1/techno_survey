@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  survey_mails:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./django
+    container_name: django_survey
+    volumes:
+      - ./static:/opuser/static
+      - ./sqlite:/opuser/sqlite
+    command: >
+      bash -c "./manage.py collectstatic --noinput && ./manage.py makemigrations && ./manage.py migrate && ./manage.py runserver 0.0.0.0:8000"
+
+
+  nginx:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./nginx
+    container_name: django_survey_nginx
+    volumes:
+      - ./static:/opuser/static
+    depends_on:
+      - survey_mails
+    ports:
+      - "80:80"
