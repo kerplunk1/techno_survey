@@ -13,7 +13,9 @@ WORKDIR /opuser
 
 RUN mkdir /opuser/static && mkdir /opuser/sqlite
 
-COPY ../../survey/ .
+COPY ./survey/ .
+
+COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
